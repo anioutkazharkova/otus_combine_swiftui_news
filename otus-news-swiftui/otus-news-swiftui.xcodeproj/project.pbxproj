@@ -17,6 +17,14 @@
 		1DAE20D926C1448D00C76EDF /* mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE20D626C1448D00C76EDF /* mock.swift */; };
 		1DAE20DB26C1448D00C76EDF /* String + Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE20D826C1448D00C76EDF /* String + Date.swift */; };
 		1DAE20DE26C144AF00C76EDF /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE20DD26C144AF00C76EDF /* ImageManager.swift */; };
+		1DAE20E026C1562D00C76EDF /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE20DF26C1562D00C76EDF /* NewsListView.swift */; };
+		1DAE20E426C1579D00C76EDF /* NewsItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE20E326C1579D00C76EDF /* NewsItemRow.swift */; };
+		1DAE20E726C15A0800C76EDF /* TextModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE20E626C15A0800C76EDF /* TextModifiers.swift */; };
+		1DAE20EA26C15E0900C76EDF /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 1DAE20E926C15E0900C76EDF /* SDWebImage */; };
+		1DAE20EC26C15E3200C76EDF /* CachedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE20EB26C15E3200C76EDF /* CachedImage.swift */; };
+		1DAE20EE26C1613F00C76EDF /* NewsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE20ED26C1613F00C76EDF /* NewsItemView.swift */; };
+		1DAE20F026C1644D00C76EDF /* SearchViw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE20EF26C1644D00C76EDF /* SearchViw.swift */; };
+		1DAE20F226C167A500C76EDF /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE20F126C167A500C76EDF /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +39,13 @@
 		1DAE20D626C1448D00C76EDF /* mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mock.swift; sourceTree = "<group>"; };
 		1DAE20D826C1448D00C76EDF /* String + Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String + Date.swift"; sourceTree = "<group>"; };
 		1DAE20DD26C144AF00C76EDF /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		1DAE20DF26C1562D00C76EDF /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
+		1DAE20E326C1579D00C76EDF /* NewsItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemRow.swift; sourceTree = "<group>"; };
+		1DAE20E626C15A0800C76EDF /* TextModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifiers.swift; sourceTree = "<group>"; };
+		1DAE20EB26C15E3200C76EDF /* CachedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImage.swift; sourceTree = "<group>"; };
+		1DAE20ED26C1613F00C76EDF /* NewsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemView.swift; sourceTree = "<group>"; };
+		1DAE20EF26C1644D00C76EDF /* SearchViw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViw.swift; sourceTree = "<group>"; };
+		1DAE20F126C167A500C76EDF /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DAE20EA26C15E0900C76EDF /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +79,7 @@
 		1DAE20BF26C143A300C76EDF /* otus-news-swiftui */ = {
 			isa = PBXGroup;
 			children = (
+				1DAE20E526C159F400C76EDF /* styles */,
 				1DAE20DC26C1449F00C76EDF /* image */,
 				1DAE20D526C1448D00C76EDF /* util */,
 				1DAE20CE26C1445B00C76EDF /* data */,
@@ -70,6 +87,11 @@
 				1DAE20C226C143A300C76EDF /* ContentView.swift */,
 				1DAE20C426C143A500C76EDF /* Assets.xcassets */,
 				1DAE20C626C143A500C76EDF /* Preview Content */,
+				1DAE20DF26C1562D00C76EDF /* NewsListView.swift */,
+				1DAE20E326C1579D00C76EDF /* NewsItemRow.swift */,
+				1DAE20ED26C1613F00C76EDF /* NewsItemView.swift */,
+				1DAE20EF26C1644D00C76EDF /* SearchViw.swift */,
+				1DAE20F126C167A500C76EDF /* SearchBar.swift */,
 			);
 			path = "otus-news-swiftui";
 			sourceTree = "<group>";
@@ -105,8 +127,17 @@
 			isa = PBXGroup;
 			children = (
 				1DAE20DD26C144AF00C76EDF /* ImageManager.swift */,
+				1DAE20EB26C15E3200C76EDF /* CachedImage.swift */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		1DAE20E526C159F400C76EDF /* styles */ = {
+			isa = PBXGroup;
+			children = (
+				1DAE20E626C15A0800C76EDF /* TextModifiers.swift */,
+			);
+			path = styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +156,9 @@
 			dependencies = (
 			);
 			name = "otus-news-swiftui";
+			packageProductDependencies = (
+				1DAE20E926C15E0900C76EDF /* SDWebImage */,
+			);
 			productName = "otus-news-swiftui";
 			productReference = 1DAE20BD26C143A300C76EDF /* otus-news-swiftui.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +187,9 @@
 				Base,
 			);
 			mainGroup = 1DAE20B426C143A300C76EDF;
+			packageReferences = (
+				1DAE20E826C15E0900C76EDF /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 1DAE20BE26C143A300C76EDF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -181,12 +218,19 @@
 			files = (
 				1DAE20D326C1445B00C76EDF /* SearchItem.swift in Sources */,
 				1DAE20D926C1448D00C76EDF /* mock.swift in Sources */,
+				1DAE20F226C167A500C76EDF /* SearchBar.swift in Sources */,
 				1DAE20DE26C144AF00C76EDF /* ImageManager.swift in Sources */,
 				1DAE20D426C1445B00C76EDF /* NewsList.swift in Sources */,
+				1DAE20F026C1644D00C76EDF /* SearchViw.swift in Sources */,
 				1DAE20C326C143A300C76EDF /* ContentView.swift in Sources */,
 				1DAE20D226C1445B00C76EDF /* NewsItem.swift in Sources */,
 				1DAE20DB26C1448D00C76EDF /* String + Date.swift in Sources */,
+				1DAE20E026C1562D00C76EDF /* NewsListView.swift in Sources */,
+				1DAE20E426C1579D00C76EDF /* NewsItemRow.swift in Sources */,
 				1DAE20C126C143A300C76EDF /* otus_news_swiftuiApp.swift in Sources */,
+				1DAE20E726C15A0800C76EDF /* TextModifiers.swift in Sources */,
+				1DAE20EE26C1613F00C76EDF /* NewsItemView.swift in Sources */,
+				1DAE20EC26C15E3200C76EDF /* CachedImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +435,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1DAE20E826C15E0900C76EDF /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1DAE20E926C15E0900C76EDF /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DAE20E826C15E0900C76EDF /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1DAE20B526C143A300C76EDF /* Project object */;
 }
