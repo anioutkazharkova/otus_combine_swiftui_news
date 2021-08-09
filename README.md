@@ -1,2 +1,2 @@
-# otus_combine_swiftui_news
+# Otus news SwiftUI
 Приложение для интенсива Otus Пишем современное iOS приложение на SwiftUI 
