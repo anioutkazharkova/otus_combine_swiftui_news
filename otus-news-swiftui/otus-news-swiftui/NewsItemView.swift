@@ -6,34 +6,40 @@
 //
 
 import SwiftUI
+import SwiftUINavigator
 
-struct NewsItemView: View {
+struct NewsItemView: IItemView {
+    var listener: INavigationContainer?
     @State var item: NewsItem
     
     var body: some View {
         GeometryReader { reader in
-            ScrollView {
-                VStack(alignment: .leading, spacing: 10) {
-                    if #available(iOS 15.0, *) {
-                        AsyncImage(url: URL(string: item.urlToImage ?? "")) { image in
-                            image.frame(width: reader.size.width - 20, height: 250, alignment: .center).aspectRatio(contentMode: .fill).clipped()
-                        } placeholder: {
-                            Color.red.frame(width: reader.size.width - 20, height: 100, alignment: .center)
+            NavigationView {
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 10) {
+                        if #available(iOS 15.0, *) {
+                            AsyncImage(url: URL(string: item.urlToImage ?? "")) { image in
+                                image.frame(width: reader.size.width - 20, height: 250, alignment: .center).aspectRatio(contentMode: .fill).clipped()
+                            } placeholder: {
+                                Color.red.frame(width: reader.size.width - 20, height: 100, alignment: .center)
+                            }
+                        } else {
+                            CachedImage(url: item.urlToImage ?? "")
                         }
-                    } else {
-                        CachedImage(url: item.urlToImage ?? "")
-                    }
-                    
-                    Text(item.title ?? "").largeTitle()
-                    Text(item.dateString).smallTitle()
-                    Text(item.content ?? "").subtextTitle()
-                    Button {
-                        UIApplication.shared.open(URL(string: item.url ?? "")!, options: [:], completionHandler: nil)
-                    } label: {
-                        Text("Show more").smallTitle()
-                    }
-                    Spacer()
-                }.padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+                        
+                        Text(item.title ?? "").largeTitle()
+                        Text(item.dateString).smallTitle()
+                        Text(item.content ?? "").subtextTitle()
+                        Button {
+                            UIApplication.shared.open(URL(string: item.url ?? "")!, options: [:], completionHandler: nil)
+                        } label: {
+                            Text("Show more").smallTitle()
+                        }
+                        Spacer()
+                    }.padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+                }.navigationBarItems(leading:  Color.blue.frame(width: 40, height: 40, alignment: .topLeading).onTapGesture {
+                    self.listener?.pop()
+                })
             }
         }
     }

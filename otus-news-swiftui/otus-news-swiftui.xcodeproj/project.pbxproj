@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D19566F26C2A34C00AC4800 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19566E26C2A34C00AC4800 /* NetworkService.swift */; };
+		1D19567126C2A38D00AC4800 /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19567026C2A38D00AC4800 /* NetworkConfiguration.swift */; };
+		1D19567326C2A5CA00AC4800 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19567226C2A5CA00AC4800 /* ErrorResponse.swift */; };
+		1D19567526C2A6DC00AC4800 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19567426C2A6DC00AC4800 /* JsonHelper.swift */; };
+		1D19567826C2A8EC00AC4800 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19567726C2A8EC00AC4800 /* NewsService.swift */; };
+		1D19567A26C2A92800AC4800 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19567926C2A92800AC4800 /* Requests.swift */; };
+		1D19568126C2AAAE00AC4800 /* NewsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19568026C2AAAE00AC4800 /* NewsListModel.swift */; };
+		1D19568626C2AC9400AC4800 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D19568526C2AC9400AC4800 /* SearchModel.swift */; };
+		1D19568926C2B9F800AC4800 /* SwiftUINavigator in Frameworks */ = {isa = PBXBuildFile; productRef = 1D19568826C2B9F800AC4800 /* SwiftUINavigator */; };
 		1DAE20C126C143A300C76EDF /* otus_news_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE20C026C143A300C76EDF /* otus_news_swiftuiApp.swift */; };
 		1DAE20C326C143A300C76EDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE20C226C143A300C76EDF /* ContentView.swift */; };
 		1DAE20C526C143A500C76EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAE20C426C143A500C76EDF /* Assets.xcassets */; };
@@ -28,6 +37,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D19566E26C2A34C00AC4800 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		1D19567026C2A38D00AC4800 /* NetworkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
+		1D19567226C2A5CA00AC4800 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		1D19567426C2A6DC00AC4800 /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		1D19567626C2A8BB00AC4800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1D19567726C2A8EC00AC4800 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		1D19567926C2A92800AC4800 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		1D19568026C2AAAE00AC4800 /* NewsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListModel.swift; sourceTree = "<group>"; };
+		1D19568526C2AC9400AC4800 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		1DAE20BD26C143A300C76EDF /* otus-news-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "otus-news-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DAE20C026C143A300C76EDF /* otus_news_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otus_news_swiftuiApp.swift; sourceTree = "<group>"; };
 		1DAE20C226C143A300C76EDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D19568926C2B9F800AC4800 /* SwiftUINavigator in Frameworks */,
 				1DAE20EA26C15E0900C76EDF /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +79,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D19566D26C2A33200AC4800 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				1D19566E26C2A34C00AC4800 /* NetworkService.swift */,
+				1D19567026C2A38D00AC4800 /* NetworkConfiguration.swift */,
+				1D19567226C2A5CA00AC4800 /* ErrorResponse.swift */,
+				1D19567426C2A6DC00AC4800 /* JsonHelper.swift */,
+				1D19567926C2A92800AC4800 /* Requests.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		1D19567B26C2A95000AC4800 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				1D19567726C2A8EC00AC4800 /* NewsService.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		1D19567C26C2AA8D00AC4800 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1D19568226C2AC6E00AC4800 /* Search */,
+				1D19567D26C2AA9400AC4800 /* NewsList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1D19567D26C2AA9400AC4800 /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+				1D19567F26C2AAA200AC4800 /* model */,
+				1D19567E26C2AA9A00AC4800 /* view */,
+			);
+			path = NewsList;
+			sourceTree = "<group>";
+		};
+		1D19567E26C2AA9A00AC4800 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1DAE20DF26C1562D00C76EDF /* NewsListView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		1D19567F26C2AAA200AC4800 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1D19568026C2AAAE00AC4800 /* NewsListModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1D19568226C2AC6E00AC4800 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				1D19568426C2AC8900AC4800 /* model */,
+				1D19568326C2AC7E00AC4800 /* view */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		1D19568326C2AC7E00AC4800 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1DAE20EF26C1644D00C76EDF /* SearchViw.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		1D19568426C2AC8900AC4800 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1D19568526C2AC9400AC4800 /* SearchModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		1DAE20B426C143A300C76EDF = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +177,10 @@
 		1DAE20BF26C143A300C76EDF /* otus-news-swiftui */ = {
 			isa = PBXGroup;
 			children = (
+				1D19567C26C2AA8D00AC4800 /* Modules */,
+				1D19567B26C2A95000AC4800 /* News */,
+				1D19567626C2A8BB00AC4800 /* Info.plist */,
+				1D19566D26C2A33200AC4800 /* NetworkService */,
 				1DAE20E526C159F400C76EDF /* styles */,
 				1DAE20DC26C1449F00C76EDF /* image */,
 				1DAE20D526C1448D00C76EDF /* util */,
@@ -87,10 +189,8 @@
 				1DAE20C226C143A300C76EDF /* ContentView.swift */,
 				1DAE20C426C143A500C76EDF /* Assets.xcassets */,
 				1DAE20C626C143A500C76EDF /* Preview Content */,
-				1DAE20DF26C1562D00C76EDF /* NewsListView.swift */,
 				1DAE20E326C1579D00C76EDF /* NewsItemRow.swift */,
 				1DAE20ED26C1613F00C76EDF /* NewsItemView.swift */,
-				1DAE20EF26C1644D00C76EDF /* SearchViw.swift */,
 				1DAE20F126C167A500C76EDF /* SearchBar.swift */,
 			);
 			path = "otus-news-swiftui";
@@ -158,6 +258,7 @@
 			name = "otus-news-swiftui";
 			packageProductDependencies = (
 				1DAE20E926C15E0900C76EDF /* SDWebImage */,
+				1D19568826C2B9F800AC4800 /* SwiftUINavigator */,
 			);
 			productName = "otus-news-swiftui";
 			productReference = 1DAE20BD26C143A300C76EDF /* otus-news-swiftui.app */;
@@ -189,6 +290,7 @@
 			mainGroup = 1DAE20B426C143A300C76EDF;
 			packageReferences = (
 				1DAE20E826C15E0900C76EDF /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				1D19568726C2B9F800AC4800 /* XCRemoteSwiftPackageReference "swiftuinavigator" */,
 			);
 			productRefGroup = 1DAE20BE26C143A300C76EDF /* Products */;
 			projectDirPath = "";
@@ -222,13 +324,21 @@
 				1DAE20DE26C144AF00C76EDF /* ImageManager.swift in Sources */,
 				1DAE20D426C1445B00C76EDF /* NewsList.swift in Sources */,
 				1DAE20F026C1644D00C76EDF /* SearchViw.swift in Sources */,
+				1D19567526C2A6DC00AC4800 /* JsonHelper.swift in Sources */,
 				1DAE20C326C143A300C76EDF /* ContentView.swift in Sources */,
+				1D19567126C2A38D00AC4800 /* NetworkConfiguration.swift in Sources */,
 				1DAE20D226C1445B00C76EDF /* NewsItem.swift in Sources */,
+				1D19567826C2A8EC00AC4800 /* NewsService.swift in Sources */,
 				1DAE20DB26C1448D00C76EDF /* String + Date.swift in Sources */,
+				1D19568626C2AC9400AC4800 /* SearchModel.swift in Sources */,
+				1D19567A26C2A92800AC4800 /* Requests.swift in Sources */,
 				1DAE20E026C1562D00C76EDF /* NewsListView.swift in Sources */,
+				1D19566F26C2A34C00AC4800 /* NetworkService.swift in Sources */,
 				1DAE20E426C1579D00C76EDF /* NewsItemRow.swift in Sources */,
 				1DAE20C126C143A300C76EDF /* otus_news_swiftuiApp.swift in Sources */,
 				1DAE20E726C15A0800C76EDF /* TextModifiers.swift in Sources */,
+				1D19568126C2AAAE00AC4800 /* NewsListModel.swift in Sources */,
+				1D19567326C2A5CA00AC4800 /* ErrorResponse.swift in Sources */,
 				1DAE20EE26C1613F00C76EDF /* NewsItemView.swift in Sources */,
 				1DAE20EC26C15E3200C76EDF /* CachedImage.swift in Sources */,
 			);
@@ -364,6 +474,7 @@
 				DEVELOPMENT_TEAM = 7848QT82M4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "otus-news-swiftui/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -394,6 +505,7 @@
 				DEVELOPMENT_TEAM = 7848QT82M4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "otus-news-swiftui/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -437,6 +549,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1D19568726C2B9F800AC4800 /* XCRemoteSwiftPackageReference "swiftuinavigator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/anioutkazharkova/swiftuinavigator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		1DAE20E826C15E0900C76EDF /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
@@ -448,6 +568,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1D19568826C2B9F800AC4800 /* SwiftUINavigator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D19568726C2B9F800AC4800 /* XCRemoteSwiftPackageReference "swiftuinavigator" */;
+			productName = SwiftUINavigator;
+		};
 		1DAE20E926C15E0900C76EDF /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1DAE20E826C15E0900C76EDF /* XCRemoteSwiftPackageReference "SDWebImage" */;

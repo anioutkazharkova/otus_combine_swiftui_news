@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import SwiftUINavigator
 
-struct SearchView: View {
+struct SearchView: IItemView {
+    var listener: INavigationContainer?
     @ObservedObject var model = SearchModel()
     @State var text: String = ""
     
@@ -24,6 +26,7 @@ struct SearchView: View {
                 self.model.search(query: newValue)
             }).navigationBarTitle("Search", displayMode: .inline)
         } else {*/
+        NavigationView{
             VStack {
             SearchBar(text: $text) { text in
                 self.model.search(query: text)
@@ -35,21 +38,14 @@ struct SearchView: View {
                     NewsItemRow(item: item)
                 }
 
-            }}.navigationBarTitle("Search", displayMode: .inline)
+            }}.navigationBarTitle("Search", displayMode: .inline).navigationBarItems(leading:  Color.blue.frame(width: 40, height: 40, alignment: .topLeading).onTapGesture {
+                self.listener?.pop()
+            })
+        }
         //}
     }
 }
 
-class SearchModel : ObservableObject {
-    var cachedItems  = MockHelper.shared.mockItems
-    @Published var foundItems = [NewsItem] ()
-    
-    func search(query: String) {
-        if query.count > 2 {
-            foundItems = cachedItems.filter { ($0.content?.lowercased() ?? "").contains(query.lowercased())}
-        }
-    }
-}
 
 
 

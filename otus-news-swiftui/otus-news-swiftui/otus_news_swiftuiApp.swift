@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import SwiftUINavigator
 
 @main
 struct otus_news_swiftuiApp: App {
     var body: some Scene {
         WindowGroup {
-           NewsListView()
+            NavigationContainerView(transition: .custom(.opacity), content: {
+                NewsListView()
+            })
         }
     }
 }
